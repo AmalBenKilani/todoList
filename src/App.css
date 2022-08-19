@@ -1,38 +1,72 @@
+* {
+  text-align: center;
+  background-color: #f8f8ff;
+}
+header {
+  font-size: x-large;
+  color: plum;
+  font-weight: bolder;
+}
 .App {
   text-align: center;
+  background-color: #f8f8ff;
+}
+button {
+  background-color: blueviolet !important ;
+  border: blueviolet !important;
+  padding: 5px !important;
+  margin-top: 50px !important;
+  margin-right: 350px !important;
+}
+.task span {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.task Button {
+  margin: 0 !important;
+  padding: 3px !important ;
+  margin-left: 20px !important;
+  font-weight: lighter !important;
+  font-size: x-small !important;
+}
+.task {
+  margin-bottom: 15px;
+}
+.uncheck {
+  font-weight: lighter;
+}
+.check {
+  font-weight: bolder;
+  text-decoration: line-through;
+}
+.addTask Button {
+  margin: 0 !important;
+  padding: 3px !important ;
+  margin-left: 20px !important;
+  font-size: small !important;
+  margin-bottom: 5px !important;
+  padding: 5px !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.addTask {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.addTask input {
+  border-radius: 5px;
+  font-weight: lighter !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.taskFilter {
+  margin-bottom: 30px;
+  margin-right: 65px;
 }
-
-.App-link {
-  color: #61dafb;
+.taskFilter label {
+  font-size: small;
+  font-weight: lighter;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.taskFilter input {
+  width: 10px;
+  height: 10px;
 }

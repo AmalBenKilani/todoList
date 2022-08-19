@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import ListTask from './components/ListTask'
+import AddTask from './components/AddTask'
+import TaskFilter from './components/TaskFilter';
+
 
 function App() {
+
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header >
+        TO DO LIST
       </header>
+      <div className='addTask' >
+        <AddTask />
+      </div>
+      <div className='taskFilter' >
+        <TaskFilter />
+      </div>
+
+      <div className='tasks'>
+        <ListTask />
+      </div>
+
     </div>
   );
 }
